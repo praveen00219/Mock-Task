@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .custom-border {
+            border: 3px solid red;
+        }
+
+        .custom-border-blue {
+            border: 3px solid blue;
+        }
+
+        .custom-border-lightblue {
+            border: 3px solid lightblue;
+        }
+
+        .text-red {
+            color: red;
+        }
+
+        .text-blue {
+            color: blue;
+        }
+
+        .text-lightblue {
+            color: lightblue;
+        }
+    </style>
+</head>
+
+<body class="bg-white flex h-screen p-32">
+    <div class="relative w-11/12">
+        <!-- MySQL Box -->
+        <div class="absolute top-0 left-0 custom-border text-blue p-2">
+            MySQL
+        </div>
+        <!-- PHP Circle -->
+        <div class="absolute top-7 left-16 flex items-center justify-center w-20 h-20 rounded-full custom-border-blue">
+            <span class="text-red">PHP</span>
+        </div>
+        <!-- SQL Box -->
+        <div class="absolute top-24 left-32 custom-border-lightblue p-2">
+            <span class="text-red">SQL</span>
+        </div>
+    </div>
+</body>
+
+</html>
